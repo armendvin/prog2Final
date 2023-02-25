@@ -1,4 +1,6 @@
-class Grass extends Living{
+let Living = require('./Living')
+
+module.exports = class Grass extends Living{
 
     chooseCell(ch) {
        return super.chooseCell(ch)

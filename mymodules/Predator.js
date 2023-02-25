@@ -1,7 +1,8 @@
-class Predator {
+let Living = require('./Living')
+
+module.exports = class Predator extends Living{
     constructor(x, y) {
-        this.x = x
-        this.y = y
+        super(x,y)
         this.energy = 50
         this.moveEnergy = 0
         this.direction = []

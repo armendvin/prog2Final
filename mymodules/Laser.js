@@ -1,7 +1,8 @@
-class Laser {
+let Living = require('./Living')
+
+module.exports = class Laser extends Living {
     constructor(x, y) {
-        this.x = x
-        this.y = y
+        super(x,y)
         this.facingDirection = Math.round(Math.random()*4)
         this.reload = 0
         if(this.facingDirection == 1){
