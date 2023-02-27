@@ -123,7 +123,7 @@ function createObjects(){
     }
 }
 
-matrix = generateMatrix(60, 60, 1800, 1000, 0, 0, 1)
+matrix = generateMatrix(60, 60, 1800, 1000, 800, 20, 21)
 
 io.on('connection', function (socket) {
     createObjects()

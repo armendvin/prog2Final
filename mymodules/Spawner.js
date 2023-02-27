@@ -1,6 +1,6 @@
 let Living = require('./Living')
 
-class Spawner extends Living {
+module.exports = class Spawner extends Living {
     constructor(x, y) {
         super(x,y)
         this.spawnEnergy = 0
